@@ -3,8 +3,8 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import seaborn as sns; sns.set()
 
-yearsBase, meanBase = np.loadtxt('C:/Users/fernando.coz/Documents/Python/ClimateChange/dataset/5-year-mean-1951-1980.csv', delimiter=',', usecols=(0, 1), unpack=True)
-years, mean = np.loadtxt('C:/Users/fernando.coz/Documents/Python/ClimateChange/dataset/5-year-mean-1882-2014.csv', delimiter=',', usecols=(0, 1), unpack=True)
+yearsBase, meanBase = np.loadtxt('https://raw.githubusercontent.com/ferdcoz/ClimateChangeLR/master/5-year-mean-1951-1980.csv', delimiter=',', usecols=(0, 1), unpack=True)
+years, mean = np.loadtxt('https://raw.githubusercontent.com/ferdcoz/ClimateChangeLR/master/5-year-mean-1882-2014.csv', delimiter=',', usecols=(0, 1), unpack=True)
 
 plt.scatter(yearsBase, meanBase)
 plt.title('scatter plot of mean temp difference vs year')
